@@ -2,10 +2,12 @@ import streamlit as st
 import pickle, json, numpy as np
 
 # Load model files
-model   = pickle.load(open("model.pkl", "rb"))
-encoder = pickle.load(open("encoder.pkl", "rb"))
-locations = json.load(open("locations.json"))
+import os
+BASE = os.path.dirname(__file__)
 
+model     = pickle.load(open(os.path.join(BASE, "model.pkl"), "rb"))
+encoder   = pickle.load(open(os.path.join(BASE, "encoder.pkl"), "rb"))
+locations = json.load(open(os.path.join(BASE, "locations.json")))
 # Page config
 st.set_page_config(page_title="BLR House Price AI", page_icon="🏙️", layout="centered")
 
