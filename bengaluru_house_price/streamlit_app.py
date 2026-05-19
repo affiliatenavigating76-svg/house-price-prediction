@@ -197,6 +197,33 @@ label, .stSelectbox label, .stNumberInput label, .stSlider label {
 """, unsafe_allow_html=True)
 
 # ── Header ──────────────────────────────────────────────────────────────────
+# ── Credits (fixed top right) ───────────────────────────────────────────────
+st.markdown("""
+<div style="
+    position: fixed;
+    top: 56px;
+    right: 18px;
+    background: #020c04;
+    border: 1px solid #00440077;
+    border-radius: 10px;
+    padding: 12px 16px;
+    z-index: 9999;
+    text-align: right;
+    box-shadow: 0 0 12px #00ff4122;
+">
+    <div style="font-family:'Share Tech Mono',monospace; color:#00aa28; font-size:0.68rem; letter-spacing:2px; margin-bottom:8px; text-transform:uppercase;">Done By</div>
+    <div style="font-family:'Share Tech Mono',monospace; color:#00ff41; font-size:0.75rem; line-height:2; text-shadow: 0 0 8px #00ff4177;">
+        R.Harish<br>
+        D.A.Kadhiravan<br>
+        T.Bhavesh<br>
+        S.Dinesh<br>
+        P.Jishnu<br>
+        S.Sundar
+    </div>
+</div>
+""", unsafe_allow_html=True)
+
+# ── Header ───────────────────────────────────────────────────────────────────
 st.markdown('<div class="main-title">🏙️ BLR HOUSE AI</div>', unsafe_allow_html=True)
 st.markdown('<div class="sub-title">> BENGALURU REAL ESTATE PRICE PREDICTOR</div>', unsafe_allow_html=True)
 
