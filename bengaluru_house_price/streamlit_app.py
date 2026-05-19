@@ -208,20 +208,23 @@ st.markdown("""
     background: #020c04;
     border: 1px solid #00440077;
     border-radius: 10px;
-    padding: 12px 16px;
+    padding: 10px 14px;
     z-index: 9999;
     text-align: right;
     box-shadow: 0 0 12px #00ff4122;
+    max-width: 140px;
 ">
-    <div style="font-family:'Share Tech Mono',monospace; color:#00aa28; font-size:0.68rem; letter-spacing:2px; margin-bottom:8px; text-transform:uppercase;">Done By</div>
-    <div style="font-family:'Share Tech Mono',monospace; color:#00ff41; font-size:0.75rem; line-height:2; text-shadow: 0 0 8px #00ff4177;">
-        R.Harish<br>
-        D.A.Kadhiravan<br>
-        T.Bhavesh<br>
-        S.Dinesh<br>
-        P.Jishnu<br>
-        S.Sundar
-    </div>
+    <details>
+        <summary style="font-family:'Share Tech Mono',monospace; color:#00aa28; font-size:0.68rem; letter-spacing:2px; cursor:pointer; list-style:none;">👥 DONE BY</summary>
+        <div style="font-family:'Share Tech Mono',monospace; color:#00ff41; font-size:0.72rem; line-height:2; text-shadow: 0 0 8px #00ff4177; margin-top:8px;">
+            R.Harish<br>
+            D.A.Kadhiravan<br>
+            T.Bhavesh<br>
+            S.Dinesh<br>
+            P.Jishnu<br>
+            S.Sundar
+        </div>
+    </details>
 </div>
 """, unsafe_allow_html=True)
 
